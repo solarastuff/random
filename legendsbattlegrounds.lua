@@ -12,3 +12,13 @@ RunService.Heartbeat:Connect(function()
         end
     end
 end)
+
+
+local gui = game:GetService("StarterGui")
+
+gui:SetCore("SendNotification", {
+    Title = "yay",                
+    Text = "no cooldowns loaded",
+    Duration = 5                
+
+})
