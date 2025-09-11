@@ -59,64 +59,20 @@ local Window = WindUI:CreateWindow({
     },
 })
 
+
+
 local Tab = Window:Tab({
     Title = "Tab Title",
     Icon = "bird",
     Locked = false,
 })
 
-local Section = Window:Section({
-    Title = "Section for the tabs",
-    Icon = "bird",
-    Opened = true,
-})
-local Dialog = Window:Dialog({
-    Icon = "bird",
-    Title = "Dialog Title",
-    Content = "Content Text",
-    Buttons = {
-        {
-            Title = "Confirm",
-            Callback = function()
-                print("Confirmed!")
-            end,
-        },
-        {
-            Title = "Cancel",
-            Callback = function()
-                print("Cancelled!")
-            end,
-        },
-    },
-})
-WindUI:Popup({
-    Title = "Popup Title",
-    Icon = "info",
-    Content = "Popup content",
-    Buttons = {
-        {
-            Title = "Cancel",
-            Callback = function() end,
-            Variant = "Tertiary",
-        },
-        {
-            Title = "Continue",
-            Icon = "arrow-right",
-            Callback = function() end,
-            Variant = "Primary",
-        }
-    }
-})
+
 Window:Tag({
-    Title = "v1.6.4",
+    Title = "sigma",
     Color = Color3.fromHex("#30ff6a")
 })
-WindUI:Notify({
-    Title = "Notification Title",
-    Content = "Notification Content example!",
-    Duration = 3, -- 3 seconds
-    Icon = "bird",
-})
+
 local Button = Tab:Button({
     Title = "Button",
     Desc = "Test Button",
