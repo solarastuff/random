@@ -7,7 +7,7 @@ local Window = WindUI:CreateWindow({
     Folder = "MySuperHub",
     
     -- ↓ This all is Optional. You can remove it.
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(500, 430),
     Transparent = true,
     Theme = "Dark",
     
